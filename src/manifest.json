@@ -1,18 +1,18 @@
 {
   "background": { "page": "index.html?background", "persistant": false },
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-  "description": "See most recent SAML response",
+  "description": "See most recent SAML response (from AWS) and always send it to localhost:31415 too",
   "icons": {
     "16": "asset/icon/16.png",
     "48": "asset/icon/48.png",
     "128": "asset/icon/128.png"
   },
-  "name": "SAML Response",
+  "name": "SAML Response (AWS to localhost)",
   "manifest_version": 2,
   "page_action": {
     "default_icon": "asset/icon/16-disabled.png",
     "default_title": "No SAML response"
   },
-  "permissions": ["http://*/*", "https://*/*", "webRequest"],
-  "version": "1.0.1"
+  "permissions": ["http://127.0.0.1:31415/*", " https://signin.aws.amazon.com/*", "webRequest"],
+  "version": "1.0.2"
 }
