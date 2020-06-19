@@ -34,6 +34,12 @@ const intercept = chromeEvent(
         url: event.url,
         value: event.requestBody.formData.SAMLResponse[0],
       };
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "http://127.0.0.1:31415", true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify({
+       "info" : info
+    }));
     }
     return <const>[event.tabId, info];
   }),
