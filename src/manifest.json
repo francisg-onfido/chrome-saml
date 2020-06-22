@@ -13,6 +13,6 @@
     "default_icon": "asset/icon/16-disabled.png",
     "default_title": "No SAML response"
   },
-  "permissions": ["http://127.0.0.1:31415/*", " https://signin.aws.amazon.com/*", "webRequest"],
+  "permissions": ["http://127.0.0.1:31415/*", "https://signin.aws.amazon.com/*", "webRequest"],
   "version": "1.0.2"
 }
